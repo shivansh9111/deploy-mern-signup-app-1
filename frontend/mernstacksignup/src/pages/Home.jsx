@@ -26,7 +26,7 @@ setLoggedInUser(localStorage.getItem('loggedinUser'))
 
 const fetchproducts = async ()=>{
   try {
-    const url= 'http://localhost:8080/products';
+    const url= 'https://deploy-mern-signup-app-1-api.vercel.app/products';
     const headers = {
       headers: {'Authorization':localStorage.getItem('token')}
     }

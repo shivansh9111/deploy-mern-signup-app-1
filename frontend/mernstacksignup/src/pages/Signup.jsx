@@ -28,7 +28,7 @@ const navigate = useNavigate()
      return handleError("all fields are required")
     } 
     try {
-      const url="http://localhost:8080/auth/signup";
+      const url="https://deploy-mern-signup-app-1-api.vercel.app/auth/signup";
       const response = await fetch(url,{
         method:'POST',
         headers:{'Content-Type':'application/json'},
